@@ -50,4 +50,10 @@ func main() {
 	fmt.Println(lastNameFirst(fname, lname))
 
 	fmt.Println(split(num1))
+
+	/**
+	* %q wraps quotes when printing strings
+	* \n creates line break and avoids '%' at EOL
+	 */
+	fmt.Printf("%v %v %q %v %q\n", num1, num2, fname, toBe, defaultString)
 }
