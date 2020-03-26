@@ -10,4 +10,8 @@ func main() {
 	f := float64(i)
 
 	fmt.Printf("%T, %v\n", f, f)
+
+	a := f
+
+	fmt.Printf("%T, %v, %T, %v\n", f, f, a, a)
 }
