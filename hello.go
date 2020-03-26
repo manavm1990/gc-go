@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// package-level variables ('global' - 🙅🏽‍♂️)
+var fname, lname string = "Manav", "Misra"
+
 func add(x, y int) int {
 	return x + y
 }
@@ -19,11 +22,11 @@ func split(num int) (x, y int) {
 }
 
 func main() {
-	// Uninitialized variables set to default value of 0, for type 'int'.
+	num1, num2 := 18, 22
 	var num1, num2 int = 18, 22
 	fmt.Println(add(num1, num2))
 
-	fmt.Println(lastNameFirst("Manav", "Misra"))
+	fmt.Println(lastNameFirst(fname, lname))
 
 	fmt.Println(split(num1))
 }
