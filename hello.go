@@ -1,9 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/cmplx"
+)
 
-// package-level variables ('global' - 🙅🏽‍♂️)
-var fname, lname string = "Manav", "Misra"
+// Globals wrapped in 'var' block like 'import' 👆🏽
+var (
+	toBe bool = false
+
+	// Globals allow code pollution! 👎🏽
+	pollution string
+
+	// (https://stackoverflow.com/a/60866548/1653236)
+	maxValuePositiveInt uint64 = 1<<64 - 1
+
+	// Imaginary numbers - advanced math stuff 😕
+	z complex128 = cmplx.Sqrt(-5 + 12i)
+)
 
 func add(x, y int) int {
 	return x + y
@@ -23,8 +37,9 @@ func split(num int) (x, y int) {
 
 func main() {
 	num1, num2 := 18, 22
-	var num1, num2 int = 18, 22
-	fmt.Println(add(num1, num2))
+	fname, lname := "Manav", "Misra"
+
+	fmt.Println(add(num1, num2), toBe, maxValuePositiveInt)
 
 	fmt.Println(lastNameFirst(fname, lname))
 
