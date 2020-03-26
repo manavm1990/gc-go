@@ -1,4 +1,4 @@
-# Just Messin' with Golang
+# Just Gettin' Going with Go
 
 Following some of the examples from [Greater Commons.](https://greatercommons.com/learn/learn-golang)
 
