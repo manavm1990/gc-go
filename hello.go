@@ -19,7 +19,9 @@ func split(num int) (x, y int) {
 }
 
 func main() {
-	fmt.Println(add(2, 3))
+	// Uninitialized variables set to default value of 0, for type 'int'.
+	var num1, num2 int
+	fmt.Println(add(num1, num2))
 
 	fmt.Println(lastNameFirst("Manav", "Misra"))
 
