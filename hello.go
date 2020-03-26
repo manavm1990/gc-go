@@ -17,6 +17,8 @@ var (
 
 	// Imaginary numbers - advanced math stuff 😕
 	z complex128 = cmplx.Sqrt(-5 + 12i)
+
+	defaultString string
 )
 
 func add(x, y int) int {
