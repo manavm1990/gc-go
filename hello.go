@@ -41,6 +41,10 @@ func main() {
 
 	fmt.Println(add(num1, num2), toBe, maxValuePositiveInt)
 
+	/**
+	* Developer's Note: Unable to pass in addl. arguments b/c 'lastNameFirst' returns multiple values.
+	* This raises error regarding 'multiple values in single-value context.'
+	 */
 	fmt.Println(lastNameFirst(fname, lname))
 
 	fmt.Println(split(num1))
