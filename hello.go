@@ -1,6 +1,10 @@
 package main
 
+import "fmt"
+
 func main() {
-	// Developer's Note: 💛the idea 💡of 'defaulting' to 'const' as per ES2015.
-	const cannotChange = "hello!"
+	// ⚠️ Without type specified, defaults to 'int' and overflows.
+	const x = 1 << 100
+
+	fmt.Println(x)
 }
