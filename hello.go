@@ -20,10 +20,10 @@ func split(num int) (x, y int) {
 
 func main() {
 	// Uninitialized variables set to default value of 0, for type 'int'.
-	var num1, num2 int
+	var num1, num2 int = 18, 22
 	fmt.Println(add(num1, num2))
 
 	fmt.Println(lastNameFirst("Manav", "Misra"))
 
-	fmt.Println(split(17))
+	fmt.Println(split(num1))
 }
