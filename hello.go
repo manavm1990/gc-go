@@ -2,9 +2,16 @@ package main
 
 import "fmt"
 
-func main() {
-	// ⚠️ Without type specified, defaults to 'int' and overflows.
-	const x = 1 << 100
+// Given a 'start' and 'stop,' sum all of the numbers in between, inclusively
+func numberSummer(start, stop int) (total int) {
+	// Using named return value 'total' 👆🏽prevents ugly 'out of scope' variable! 🤓
+	for i := start; i <= stop; i++ {
+		total += i
+	}
 
-	fmt.Println(x)
+	return
+}
+
+func main() {
+	fmt.Println(numberSummer(1, 10))
 }
