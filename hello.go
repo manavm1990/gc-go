@@ -22,6 +22,7 @@ func main() {
 
 	fmt.Println(test)
 	fmt.Println(test.x)
+	fmt.Println(pointerToTest.x)
 
 	// Current 'state' of 'struct' for pointer to 'custom' type
 	fmt.Printf("pointerToTest has a value of: %v and a type of: %T", pointerToTest, pointerToTest)
