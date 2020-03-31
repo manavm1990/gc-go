@@ -14,4 +14,6 @@ Following some of the examples from [Greater Commons.](https://greatercommons.co
 
 ## Addl. Notes
 
-I foolishly just kept 'overwriting' my files in the `commit` history. Instead, I should have multiple files - one for each general concept. I started doing that with 'arrays.go'.
+1. I foolishly just kept 'overwriting' my files in the `commit` history. Instead, I should have multiple files - one for each general concept. I started doing that with 'arrays.go'.
+
+2. I also made separate directories for each example to avoid linting errors related to 'multiple' `main`s in same directory.
