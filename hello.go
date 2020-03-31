@@ -22,6 +22,10 @@ func main() {
 
 	fmt.Println(test)
 	fmt.Println(test.x)
+
+	fmt.Println((*pointerToTest).x)
+
+	// Syntactic sugar 👆🏽
 	fmt.Println(pointerToTest.x)
 
 	// Current 'state' of 'struct' for pointer to 'custom' type
