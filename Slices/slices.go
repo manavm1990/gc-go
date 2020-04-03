@@ -16,7 +16,7 @@ func main() {
 	anotherSlice := a[:4]
 
 	// Mutate the Array via its slice
-	// All slices referencing elements are update b/c they are just proxies for the underlying Array subsets.
+	// All slices referencing elements are updated b/c they are just proxies for the underlying Array subsets.
 	s[1] = 333
 
 	fmt.Println(a, s, anotherSlice, onTheFly)
