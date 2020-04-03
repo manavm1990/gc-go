@@ -11,7 +11,9 @@ func main() {
 
 	// Starts at index 1 👆🏽UP TO (not including) index 5.
 	s := a[1:5]
-	anotherSlice := a[0:4]
+
+	// Default lower bound is '0'
+	anotherSlice := a[:4]
 
 	// Mutate the Array via its slice
 	// All slices referencing elements are update b/c they are just proxies for the underlying Array subsets.
