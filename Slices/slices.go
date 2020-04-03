@@ -9,7 +9,7 @@ func main() {
 	// Use a 'literal' to create an Array and Slice 'on the fly.'
 	onTheFly := []string{"hello", "bye"}
 
-	// Starts at index 1 👆🏽UP TO (not including) index 3.
+	// Starts at index 1 👆🏽UP TO (not including) index 5.
 	s := a[1:5]
 	anotherSlice := a[0:4]
 
