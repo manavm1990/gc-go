@@ -33,4 +33,18 @@ func main() {
 	// Array updating itself
 	a[0] = 999
 	fmt.Printf("anotherSlice looks like: %v\n", anotherSlice)
+
+	// Array has a specified length
+	// Even if 0 length, Array is not considered 'nil'...Slice is 👇🏽
+	var stupidArray [0]string
+	fmt.Printf("stupidArray is of type: %T\n", stupidArray)
+
+	// Slice has no specified length
+	var stupidSlice []string
+
+	fmt.Printf("stupidSlice is of type: %T\n", stupidSlice)
+
+	// This slice has no underlying Array
+	fmt.Printf("stupidSlice looks like: %v. It has len: %v. It has cap: %v\n", stupidSlice, len(stupidSlice), cap(stupidSlice))
+	fmt.Printf("Is stupidSlice nil? %v\n", stupidSlice == nil)
 }
